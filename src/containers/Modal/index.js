@@ -3,7 +3,7 @@ import { useState } from "react";
 import Icon from "../../components/Icon";
 import "./style.scss";
 
-const Modal = ({ opened, Content, children }) => {
+const Modal = ({ opened = false, Content, children }) => { // AJOUT =false //
   const [isOpened, setIsOpened] = useState(opened);
   return (
     <>

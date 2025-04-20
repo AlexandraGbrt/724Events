@@ -6,12 +6,21 @@ import PropTypes from "prop-types";
 import "./style.scss";
 
 const Select = ({
+  // selection,
+  // onChange,
+  // name,
+  // titleEmpty,
+  // label,
+  // type = "normal",
+
   selection,
-  onChange,
-  name,
-  titleEmpty,
-  label,
+  onChange = () => null,
+  name = "select",
+  titleEmpty = false,
+  label = "",
   type = "normal",
+
+
 }) => {
   const [value, setValue] = useState();
   const [collapsed, setCollapsed] = useState(true);

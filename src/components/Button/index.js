@@ -8,12 +8,12 @@ export const BUTTON_TYPES = {
 };
 
 const Button = ({
-  title, onClick, type, disabled, children
-  // title = "",
-  // onClick = () => null,
-  // type = BUTTON_TYPES.DEFAULT,
-  // disabled = false,
-  // children = null,
+  // title, onClick, type, disabled, children
+  title = "",
+  onClick = () => null,
+  type = BUTTON_TYPES.DEFAULT,
+  disabled = false,
+  children = null,
 }) => {
   switch (type) {
     case BUTTON_TYPES.DEFAULT:
