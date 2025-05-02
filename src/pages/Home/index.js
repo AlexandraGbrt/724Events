@@ -17,7 +17,7 @@ const Page = () => {
   const last = data ? data.events[data.events.length - 1] : null; // affiche la dernière présentation
   // console.log(last);
 
-  // en dessous : base
+  // base
   // const { last } = useData();
 
   return <>
@@ -128,7 +128,7 @@ const Page = () => {
             title={last?.title}
             date={new Date(last?.date)}
             small
-            label="boom"  // {last?.type} ?? 
+            label="boom"
           />
         )}
       </div>
