@@ -5,7 +5,7 @@ import "./style.scss";
 
 const EventCard = ({
   imageSrc,
-  imageAlt = "image", // AJOUT image
+  imageAlt = "image",
   date = new Date(),
   title,
   label,
