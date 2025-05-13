@@ -23,4 +23,25 @@ describe("When Menu is created", () => {
       expect(window.document.location.hash).toEqual("#contact");
     });
   });
+
+  describe("and links are clicked", () => {
+    it("document location changes for 'Nos services'", async () => {
+      render(<Menu />);
+      fireEvent.click(await screen.findByText("Nos services"));
+      expect(window.document.location.hash).toEqual("#nos-services");
+    });
+
+    it("document location changes for 'Nos réalisations'", async () => {
+      render(<Menu />);
+      fireEvent.click(await screen.findByText("Nos réalisations"));
+      expect(window.document.location.hash).toEqual("#nos-realisations");
+    });
+
+    it("document location changes for 'Notre équipe'", async () => {
+      render(<Menu />);
+      fireEvent.click(await screen.findByText("Notre équipe"));
+      expect(window.document.location.hash).toEqual("#notre-equipe");
+    });
+  });
+
 });
